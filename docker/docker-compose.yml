@@ -8,6 +8,7 @@ services:
         ELK_VERSION: $ELK_VERSION
     volumes:
       - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+      - ./elasticsearch/templates:/usr/share/elasticsearch/templates:ro
     ports:
       - "9200:9200"
       - "9300:9300"
@@ -40,7 +41,8 @@ services:
       args:
         ELK_VERSION: $ELK_VERSION
     volumes:
-      - ./kibana/config/:/usr/share/kibana/config:ro
+      - ./kibana/config:/usr/share/kibana/config:ro
+      - ./kibana/index-pattern:/usr/share/kibana/index-pattern:ro
     ports:
       - "5601:5601"
     networks:
