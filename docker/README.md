@@ -9,7 +9,7 @@ This project hosts files and links to components used by
 docker-compose up
 ```
   * Open a web browser on http://127.0.0.1:5601
-    * username: **kibana**
+    * username: **elastic**
     * password: **changeme**
 
 ## Supported version
