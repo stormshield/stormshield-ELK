@@ -12,7 +12,7 @@ This project hosts files and links to components used by
 
 ### Docker
 A ready to use Elastic Stack is also provided as Docker container for testing
-, [here](https://github.com/stormshield/stormshield-ELK/tree/docker).
+, [here](./docker).
 
 ## Logstash
 ### Plugins
@@ -22,13 +22,13 @@ A ready to use Elastic Stack is also provided as Docker container for testing
   * [logstash-filter-search-engine](https://github.com/stormshield/logstash-filter-search-engine)
 
 ### Pipeline configuration
-  List of [pipeline](https://github.com/stormshield/stormshield-ELK/tree/pipeline) configurations
+  List of [pipeline](./pipeline) configurations
 
 ## Elasticsearch templates
-  List of [templates](https://github.com/stormshield/stormshield-ELK/tree/templates)
+  List of [templates](./templates)
 
 ## Kibana index-pattern
-  List of [index-pattern](https://github.com/stormshield/stormshield-ELK/tree/index-pattern)
+  List of [index-pattern](./index-pattern)
 
 ## Supported version
   * Elasticsearch : *5.6.7*
