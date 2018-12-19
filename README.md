@@ -1,17 +1,16 @@
 # Stormshield Elastic Stack
 
-This project hosts files and links to components used by
-[Stormshield Visibility Center](https://www.stormshield.com/products/visibility-center)
+This project hosts files and links to components used by [Stormshield Visibility Center](https://www.stormshield.com/products/visibility-center).
 
 ## Installation instructions
-  * Make sure you have a fully functional Elastic stack running. If not, please refer to [Installing the Elastic Stack](https://www.elastic.co/guide/en/elastic-stack/5.6/installing-elastic-stack.html#installing-elastic-stack) instructions
-  * Install [Kibana index-pattern](./index-pattern)
-  * Install [Elasticsearch templates](./templates)
-  * Update [Logstash pipeline](./pipeline) configuration
-  * Configure your Stormshield products to send logs to your Logstash instance (default port **5000**)
+  * Make sure you have a fully functional Elastic stack running. If not, please refer to [Installing the Elastic Stack](https://www.elastic.co/guide/en/elastic-stack/5.6/installing-elastic-stack.html#installing-elastic-stack) instructions,
+  * Install [Kibana index-pattern](./index-pattern),
+  * Install [Elasticsearch templates](./templates),
+  * Update [Logstash pipeline](./pipeline) configuration,
+  * Configure your Stormshield products to send logs to your Logstash instance (default port **5000**).
 
 ### Docker
-A ready to use Elastic Stack is also provided as Docker container for testing
+A ready to use Elastic Stack is also provided as a Docker container for testing
 , [here](./docker).
 
 ## Logstash
@@ -22,16 +21,16 @@ A ready to use Elastic Stack is also provided as Docker container for testing
   * [logstash-filter-search-engine](https://github.com/stormshield/logstash-filter-search-engine)
 
 ### Pipeline configuration
-  List of [pipeline](./pipeline) configurations
+  List of [pipeline](./pipeline) configurations.
 
 ## Elasticsearch templates
-  List of [templates](./templates)
+  List of [templates](./templates).
 
 ## Kibana index-pattern
-  List of [index-pattern](./index-pattern)
+  List of [index-patterns](./index-pattern).
 
 ## Supported version
-  * Elasticsearch : *5.6.7*
+  * Elasticsearch: *5.6.7*
   * Kibana: *5.6.7*
   * Logstash: *5.6.7*
 

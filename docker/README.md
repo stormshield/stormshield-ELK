@@ -1,7 +1,6 @@
 # Stormshield Docker Elastic Stack
 
-This project hosts files and links to components used by
-[Stormshield Visibility Center](https://www.stormshield.com/products/visibility-center)
+This project hosts files and links to components used by [Stormshield Visibility Center](https://www.stormshield.com/products/visibility-center).
 
 ## Installation instructions
   * Run following command to start Elastic Stack
