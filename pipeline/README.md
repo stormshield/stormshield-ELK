@@ -13,3 +13,13 @@ List of Logstash pipeline configuration files, used for Stormshield product logs
   - Copy `11-filter-standard.conf` and any _.conf_ files you want in your _Logstash_ configuration path
   - Copy `21-output-elasticsearch.conf` file in your _Logstash_ configuration path.
     - Replace **elasticsearch** host by your Elasticsearch instance hostname (eventually, update port number. Default _9200_), if needed.
+    - Replace or remove **user** and **password** as required
+    - Comment unwanted `if`/`else` sections
+  - Copy any _.template.json_ needed from [index-pattern](../index-pattern) to `/usr/share/logstash/templates/` (created directory if needed, which should belong to `logstash:logstash`)
+  - Install Logstash plugins:
+  ```bash
+  logstash-plugin install logstash-filter-SNS
+  logstash-plugin install logstash-filter-search-engine
+  logstash-plugin install logstash-filter-SDS
+  logstash-plugin install logstash-filter-SES
+  ```

@@ -6,6 +6,7 @@ This project hosts files and links to components used by [Stormshield Visibility
   * Make sure you have a fully functional Elastic stack running. If not, please refer to [Installing the Elastic Stack](https://www.elastic.co/guide/en/elastic-stack/5.6/installing-elastic-stack.html#installing-elastic-stack) instructions,
   * Install [Kibana index-pattern](./index-pattern),
   * Install [Elasticsearch templates](./templates),
+  * Install [Logstash plugins](#plugins),
   * Update [Logstash pipeline](./pipeline) configuration,
   * Configure your Stormshield products to send logs to your Logstash instance (default port **5000**).
 
