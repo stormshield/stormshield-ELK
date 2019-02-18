@@ -4,11 +4,14 @@ This project hosts files and links to components used by [Stormshield Visibility
 
 ## Installation instructions
   * Make sure you have a fully functional Elastic stack running. If not, please refer to [Installing the Elastic Stack](https://www.elastic.co/guide/en/elastic-stack/5.6/installing-elastic-stack.html#installing-elastic-stack) instructions,
+  * Install [Syslog-ng](./syslog-ng)
   * Install [Kibana index-pattern](./index-pattern),
   * Install [Elasticsearch templates](./templates),
   * Install [Logstash plugins](#plugins),
   * Update [Logstash pipeline](./pipeline) configuration,
-  * Configure your Stormshield products to send logs to your Logstash instance (default port **5000**).
+  * Configure your Stormshield products to send logs to your _Syslog-ng_ instance
+    * UDP **514** or
+    * TCP **601**
 
 ### Docker
 A ready to use Elastic Stack is also provided as a Docker container for testing
