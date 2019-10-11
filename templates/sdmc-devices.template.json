@@ -1,0 +1,31 @@
+{
+  "index_patterns": "stormshield-sdmc-devices-*",
+  "settings": {
+    "index.number_of_shards": 1,
+    "index.number_of_replicas": 0,
+    "index.refresh_interval": "30s"
+  },
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "action":                                    {"type": "keyword"},
+        "client":                                    {"type": "keyword"},
+        "client_type":                               {"type": "keyword"},
+        "client_version":                            {"type": "keyword"},
+        "device_register_date":                      {"type": "date"},
+        "duid":                                      {"type": "keyword"},
+        "entity":                                    {"type": "keyword"},
+        "hostname":                                  {"type": "keyword"},
+        "id":                                        {"type": "keyword"},
+        "internal_product":                          {"type": "keyword"},
+        "msg":                                       {"type": "keyword"},
+        "os":                                        {"type": "keyword"},
+        "os_type":                                   {"type": "keyword"},
+        "os_version":                                {"type": "keyword"},
+        "src":                                       {"type": "keyword"},
+        "type":                                      {"type": "keyword"},
+        "uid":                                       {"type": "keyword"}
+      }
+    }
+  }
+}

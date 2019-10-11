@@ -1,12 +1,12 @@
 {
-  "template": "stormshield-sds-*",
+  "index_patterns": "stormshield-sds-sds-*",
   "settings": {
     "index.number_of_shards": 1,
     "index.number_of_replicas": 0,
     "index.refresh_interval": "30s"
   },
   "mappings": {
-    "sds": {
+    "_doc": {
       "properties": {
         "category":         {"type": "keyword"},
         "domain":           {"type": "keyword"},

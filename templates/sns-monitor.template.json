@@ -1,0 +1,66 @@
+{
+  "index_patterns": "stormshield-sns-monitor-*",
+  "settings": {
+    "index.number_of_shards": 1,
+    "index.number_of_replicas": 0,
+    "index.refresh_interval": "30s"
+  },
+  "mappings": {
+    "_doc": {
+      "dynamic_templates": [
+        {
+          "interfaces_name": {
+            "match_pattern": "regex",
+            "path_match":   "[Agg|Ethernet|ipsec|Qid|sslvpn|Vlan|Wifi|Wlan|wldev].*\\.name",
+            "mapping": {"type": "keyword"}
+          }
+        },
+        {
+          "interfaces_gress": {
+            "match_mapping_type": "long",
+            "match_pattern": "regex",
+            "path_match":   "[Agg|Ethernet|ipsec|Qid|sslvpn|Vlan|Wifi|Wlan|wldev].*\\.(?:in|e)gress.*",
+            "mapping": {"type": "long"}
+          }
+        },
+        {
+          "interfaces_packet": {
+            "match_mapping_type": "long",
+            "match_pattern": "regex",
+            "path_match":   "[Agg|Ethernet|ipsec|Qid|sslvpn|Vlan|Wifi|Wlan|wldev].*\\.packet.*",
+            "mapping": {"type": "long"}
+          }
+        }
+      ],
+      "properties": {
+        "CPU":                {"type": "keyword"},
+        "CPU_Interrupt":      {"type": "long"},
+        "CPU_Kernel":         {"type": "long"},
+        "CPU_Userland":       {"type": "long"},
+        "datechange":         {"type": "long"},
+        "duration":           {"type": "double"},
+        "fw":                 {"type": "keyword"},
+        "internal_product":   {"type": "keyword"},
+        "logtype":            {"type": "keyword"},
+        "Pvm":                {"type": "object", "properties": {
+          "vuln_total":       {"type": "long"},
+          "vuln_remote":      {"type": "long"},
+          "vuln_server":      {"type": "long"},
+          "vuln_crit":        {"type": "long"},
+          "vuln_minor":       {"type": "long"},
+          "vul_major":        {"type": "long"},
+          "vuln_with_fix":    {"type": "long"},
+          "info_total":       {"type": "long"},
+          "info_minor":       {"type": "long"},
+          "info_major":       {"type": "long"},
+          "info_host":        {"type": "long"}
+        }},
+        "security":           {"type": "long"},
+        "startime":           {"type": "keyword"},
+        "system":             {"type": "long"},
+        "type":               {"type": "keyword"},
+        "tz":                 {"type": "keyword"}
+      }
+    }
+  }
+}

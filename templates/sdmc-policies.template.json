@@ -1,0 +1,45 @@
+{
+  "index_patterns": "stormshield-sdmc-policies-*",
+  "settings": {
+    "index.number_of_shards": 1,
+    "index.number_of_replicas": 0,
+    "index.refresh_interval": "30s"
+  },
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "action":                                         {"type": "keyword"},
+        "allowBiometricsAuthentication":                  {"type": "keyword"},
+        "application_allowPKCS12":                        {"type": "keyword"},
+        "application_allowSmartCard":                     {"type": "keyword"},
+        "application_lockSessionInBackground":            {"type": "keyword"},
+        "application_lockSessionOnDeviceLock":            {"type": "keyword"},
+        "application_prohibitedCountries":                {"type": "keyword"},
+        "application_sessionValidityTimeoutInBackground": {"type": "integer"},
+        "corporate_preferredEmailDomain":                 {"type": "keyword"},
+        "entity":                                         {"type": "keyword"},
+        "id":                                             {"type": "keyword"},
+        "internal_product":                               {"type": "keyword"},
+        "msg":                                            {"type": "keyword"},
+        "password_allowReusePreviousPassword":            {"type": "keyword"},
+        "password_expirationDays":                        {"type": "keyword"},
+        "password_minimum_length":                        {"type": "keyword"},
+        "password_mustRespectRequirements":               {"type": "keyword"},
+        "password_requireAtLeastOneLowerCaseLetter":      {"type": "keyword"},
+        "password_requireAtLeastOneUpperCaseLetter":      {"type": "keyword"},
+        "password_requireNumericalDigits":                {"type": "keyword"},
+        "password_requireSpecialCharacters":              {"type": "keyword"},
+        "policy_type":                                    {"type": "keyword"},
+        "src":                                            {"type": "keyword"},
+        "support_crashReportEnabled":                     {"type": "keyword"},
+        "support_startupMessage_en_US":                   {"type": "keyword"},
+        "support_startupMessage_fr_FR":                   {"type": "keyword"},
+        "support_supportEmail":                           {"type": "keyword"},
+        "type":                                           {"type": "keyword"},
+        "uid":                                            {"type": "keyword"},
+        "uid_name":                                       {"type": "keyword"},
+        "version":                                        {"type": "keyword"}
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "index_patterns": ["stormshield-sns-count-*","stormshield-sns-date-*"],
+  "settings": {
+    "index.number_of_shards": 1,
+    "index.number_of_replicas": 0,
+    "index.refresh_interval": "30s"
+  },
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "datechange":         {"type": "long"},
+        "duration":           {"type": "double"},
+        "fw":                 {"type": "keyword"},
+        "internal_product":   {"type": "keyword"},
+        "logtype":            {"type": "keyword"},
+        "Rule2:43":           {"type": "long"},
+        "startime":           {"type": "keyword"},
+        "type":               {"type": "keyword"},
+        "tz":                 {"type": "keyword"}
+      }
+    }
+  }
+}

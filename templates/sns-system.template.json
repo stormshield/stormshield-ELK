@@ -1,0 +1,24 @@
+{
+  "index_patterns": "stormshield-sns-system-*",
+  "settings": {
+    "index.number_of_shards": 1,
+    "index.number_of_replicas": 0,
+    "index.refresh_interval": "30s"
+  },
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "alarmid":            {"type": "long"},
+        "fw":                 {"type": "keyword"},
+        "internal_product":   {"type": "keyword"},
+        "logtype":            {"type": "keyword"},
+        "msg":                {"type": "keyword"},
+        "pri":                {"type": "long"},
+        "service":            {"type": "keyword"},
+        "startime":           {"type": "keyword"},
+        "type":               {"type": "keyword"},
+        "tz":                 {"type": "keyword"}
+      }
+    }
+  }
+}
