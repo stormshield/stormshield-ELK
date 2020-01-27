@@ -3,7 +3,7 @@
 This project hosts files and links to components used by [Stormshield Visibility Center](https://www.stormshield.com/products/visibility-center).
 
 ## Installation instructions
-  * Make sure you have a fully functional Elastic stack running. If not, please refer to [Installing the Elastic Stack](https://www.elastic.co/guide/en/elastic-stack/5.6/installing-elastic-stack.html#installing-elastic-stack) instructions,
+  * Make sure you have a fully functional Elastic stack running. If not, please refer to [Installing the Elastic Stack](https://www.elastic.co/guide/en/elastic-stack/6.8/installing-elastic-stack.html#installing-elastic-stack) instructions,
   * Install [Syslog-ng](./syslog-ng)
   * Install [Kibana index-pattern](./index-pattern),
   * Install [Elasticsearch templates](./templates),
@@ -34,9 +34,9 @@ A ready to use Elastic Stack is also provided as a Docker container for testing
   List of [index-patterns](./index-pattern).
 
 ## Supported version
-  * Elasticsearch: *5.6.7*
-  * Kibana: *5.6.7*
-  * Logstash: *5.6.7*
+  * Elasticsearch: *6.8.2*
+  * Kibana: *6.8.2*
+  * Logstash: *6.8.2*
 
 ## Legal Disclaimer
 Open source projects are made available and contributed to under licenses that include terms that, for the protection of contributors, make clear that the projects are offered “as-is”, without warranty, and disclaiming liability for damages resulting from using the projects. This guide is no different. The open content license it is offered under includes such terms.
@@ -47,7 +47,7 @@ Running an open source project, like any human endeavor, involves uncertainty an
 SVC team:
   * [Alban MARGUET](mailto:alban.marguet@stormshield.eu)
   * [Laurent LEMKE](mailto:laurent.lemke@stormshield.eu)
-  * [Nabil BENDAFI](mailto:nabil.bendafi@stormshield.eu)
+  * Nabil BENDAFI
   * [Thomas ESCURE](mailto:thomas.escure@stormshield.eu)
 
 ## Contact
