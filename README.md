@@ -63,6 +63,7 @@ SVC team:
 * [Laurent LEMKE](mailto:laurent.lemke@stormshield.eu)
 * Nabil BENDAFI
 * [Thomas ESCURE](mailto:thomas.escure@stormshield.eu)
+* [Lucas LANCE](https://github.com/Synkronice)
 
 ## Contact
 
