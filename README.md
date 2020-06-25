@@ -28,6 +28,9 @@ A ready to use Elastic Stack is also provided as a Docker container for testing
 * [logstash-filter-SES](https://github.com/stormshield/logstash-filter-SES)
 * [logstash-filter-search-engine](https://github.com/stormshield/logstash-filter-search-engine)
 
+For install plugin, add in the Dockerfile under ./logstash/Dockerfile
+
+
 ### Pipeline configuration
 
   List of [pipeline](./pipeline) configurations.
@@ -42,9 +45,9 @@ A ready to use Elastic Stack is also provided as a Docker container for testing
 
 ## Supported version
 
-* Elasticsearch: *6.8.2*
-* Kibana: *6.8.2*
-* Logstash: *6.8.2*
+* Elasticsearch: *7.8.0*
+* Kibana: *7.8.0*
+* Logstash: *7.8.0*
 
 ## Legal Disclaimer
 
