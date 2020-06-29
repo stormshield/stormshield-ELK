@@ -16,9 +16,9 @@ docker-compose up
 
 ## Supported version
 
-* Elasticsearch : *6.8.2*
-* Kibana: *6.8.2*
-* Logstash: *6.8.2*
+* Elasticsearch : *7.8.0*
+* Kibana: *7.8.0*
+* Logstash: *7.8.0*
 
 ## Legal Disclaimer
 

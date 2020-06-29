@@ -42,9 +42,9 @@ A ready to use Elastic Stack is also provided as a Docker container for testing
 
 ## Supported version
 
-* Elasticsearch: *6.8.2*
-* Kibana: *6.8.2*
-* Logstash: *6.8.2*
+* Elasticsearch: *7.8.0*
+* Kibana: *7.8.0*
+* Logstash: *7.8.0*
 
 ## Legal Disclaimer
 
@@ -60,6 +60,9 @@ SVC team:
 * [Laurent LEMKE](mailto:laurent.lemke@stormshield.eu)
 * Nabil BENDAFI
 * [Thomas ESCURE](mailto:thomas.escure@stormshield.eu)
+
+Other:
+* [Lucas LANCE](https://github.com/Synkronice)
 
 ## Contact
 
