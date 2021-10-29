@@ -1,30 +1,28 @@
 {
-  "index_patterns": "stormshield-sds-sds-*",
+  "index_patterns": "stormshield-sds-*",
   "settings": {
     "index.number_of_shards": 1,
     "index.number_of_replicas": 0,
     "index.refresh_interval": "30s"
   },
   "mappings": {
-    "_doc": {
-      "properties": {
-        "category":         {"type": "keyword"},
-        "domain":           {"type": "keyword"},
-        "eventId":          {"type": "integer"},
-        "eventType":        {"type": "keyword"},
-        "file":             {"type": "keyword"},
-        "folder":           {"type": "keyword"},
-        "id":               {"type": "keyword"},
-        "internal_product": {"type": "keyword"},
-        "logtype":          {"type": "keyword"},
-        "msg":              {"type": "keyword"},
-        "severity":         {"type": "keyword"},
-        "src":              {"type": "keyword"},
-        "srcname":          {"type": "keyword"},
-        "type":             {"type": "keyword"},
-        "user":             {"type": "keyword"},
-        "userFullName":     {"type": "keyword"}
-      }
+    "properties": {
+      "category": { "type": "keyword" },
+      "domain": { "type": "keyword" },
+      "eventId": { "type": "integer" },
+      "eventType": { "type": "keyword" },
+      "file": { "type": "keyword" },
+      "folder": { "type": "keyword" },
+      "id": { "type": "keyword" },
+      "internal_product": { "type": "keyword" },
+      "logtype": { "type": "keyword" },
+      "msg": { "type": "keyword" },
+      "severity": { "type": "keyword" },
+      "src": { "type": "keyword" },
+      "srcname": { "type": "keyword" },
+      "type": { "type": "keyword" },
+      "user": { "type": "keyword" },
+      "userFullName": { "type": "keyword" }
     }
   }
 }
