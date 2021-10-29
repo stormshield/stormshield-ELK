@@ -4,21 +4,21 @@ This project hosts files and links to components used by [Stormshield Visibility
 
 ## Installation instructions
 
-* Run following command to start Elastic Stack
+- Run following command to start Elastic Stack
 
 ```bash
 docker-compose up
 ```
 
-* Open a web browser on http://127.0.0.1:5601
-  * username: **elastic**
-  * password: **changeme**
+- Open a web browser on http://127.0.0.1:5601
+  - username: **elastic**
+  - password: **changeme**
 
 ## Supported version
 
-* Elasticsearch : *6.8.2*
-* Kibana: *6.8.2*
-* Logstash: *6.8.2*
+- Elasticsearch : _7.10.2_
+- Kibana: _7.10.2_
+- Logstash: _7.10.2_
 
 ## Legal Disclaimer
 
@@ -28,4 +28,4 @@ Running an open source project, like any human endeavor, involves uncertainty an
 
 ## Credit
 
-* [deviantony/docker-elk](https://github.com/deviantony/docker-elk) Github project
+- [deviantony/docker-elk](https://github.com/deviantony/docker-elk) Github project

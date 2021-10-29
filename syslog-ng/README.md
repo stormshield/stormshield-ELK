@@ -4,5 +4,5 @@ Stormshield products send logs using different RFC standards. This _Syslog-ng_ c
 
 ## Installation instructions
 
-* Modify the first line of the file `syslog-stormshield-configuration.conf`: _@version: 3.13_ with you own _Syslog-ng_ version if needed
+* Modify the first line of the file `syslog-stormshield-configuration.conf`: _@version: 3.19.1_ with you own _Syslog-ng_ version if needed
 * Copy `syslog-stormshield-configuration.conf` file in your _Syslog-ng_ configuration path ( Default: _/etc/syslog-ng/conf.d/_)

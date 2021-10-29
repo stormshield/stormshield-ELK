@@ -4,15 +4,15 @@ This project hosts files and links to components used by [Stormshield Visibility
 
 ## Installation instructions
 
-* Make sure you have a fully functional Elastic stack running. If not, please refer to [Installing the Elastic Stack](https://www.elastic.co/guide/en/elastic-stack/6.8/installing-elastic-stack.html#installing-elastic-stack) instructions,
-* Install [Syslog-ng](./syslog-ng)
-* Install [Kibana index-pattern](./index-pattern),
-* Install [Elasticsearch templates](./templates),
-* Install [Logstash plugins](#plugins),
-* Update [Logstash pipeline](./pipeline) configuration,
-* Configure your Stormshield products to send logs to your _Syslog-ng_ instance
-  * UDP **514** or
-  * TCP **601**
+- Make sure you have a fully functional Elastic stack running. If not, please refer to [Installing the Elastic Stack](https://www.elastic.co/guide/en/elastic-stack/6.8/installing-elastic-stack.html#installing-elastic-stack) instructions,
+- Install [Syslog-ng](./syslog-ng)
+- Install [Kibana index-pattern](./index-pattern),
+- Install [Elasticsearch templates](./templates),
+- Install [Logstash plugins](#plugins),
+- Update [Logstash pipeline](./pipeline) configuration,
+- Configure your Stormshield products to send logs to your _Syslog-ng_ instance
+  - UDP **514** or
+  - TCP **601**
 
 ### Docker
 
@@ -23,28 +23,28 @@ A ready to use Elastic Stack is also provided as a Docker container for testing
 
 ### Plugins
 
-* [logstash-filter-SNS](https://github.com/stormshield/logstash-filter-SNS)
-* [logstash-filter-SDS](https://github.com/stormshield/logstash-filter-SDS)
-* [logstash-filter-SES](https://github.com/stormshield/logstash-filter-SES)
-* [logstash-filter-search-engine](https://github.com/stormshield/logstash-filter-search-engine)
+- [logstash-filter-SNS](https://github.com/stormshield/logstash-filter-SNS)
+- [logstash-filter-SDS](https://github.com/stormshield/logstash-filter-SDS)
+- [logstash-filter-SES](https://github.com/stormshield/logstash-filter-SES)
+- [logstash-filter-search-engine](https://github.com/stormshield/logstash-filter-search-engine)
 
 ### Pipeline configuration
 
-  List of [pipeline](./pipeline) configurations.
+List of [pipeline](./pipeline) configurations.
 
 ## Elasticsearch templates
 
-  List of [templates](./templates).
+List of [templates](./templates).
 
 ## Kibana index-pattern
 
-  List of [index-patterns](./index-pattern).
+List of [index-patterns](./index-pattern).
 
 ## Supported version
 
-* Elasticsearch: *6.8.2*
-* Kibana: *6.8.2*
-* Logstash: *6.8.2*
+- Elasticsearch: _7.10.2_
+- Kibana: _7.10.2_
+- Logstash: _7.10.2_
 
 ## Legal Disclaimer
 
@@ -56,10 +56,10 @@ Running an open source project, like any human endeavor, involves uncertainty an
 
 SVC team:
 
-* [Alban MARGUET](mailto:alban.marguet@stormshield.eu)
-* [Laurent LEMKE](mailto:laurent.lemke@stormshield.eu)
-* Nabil BENDAFI
-* [Thomas ESCURE](mailto:thomas.escure@stormshield.eu)
+- Alban MARGUET
+- [Laurent LEMKE](mailto:laurent.lemke@stormshield.eu)
+- Nabil BENDAFI
+- Thomas ESCURE
 
 ## Contact
 
