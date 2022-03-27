@@ -40,6 +40,10 @@ services:
         source: ./logstash/pipeline
         target: /usr/share/logstash/pipeline
         read_only: true
+      - type: bind
+        source: ./logstash/templates
+        target: /usr/share/logstash/templates
+        read_only: true
     ports:
       - "5000:5000"
       - "9600:9600"

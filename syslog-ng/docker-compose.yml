@@ -1,0 +1,13 @@
+version: "3.2"
+
+services:
+        syslog-ng:
+                image: balabit/syslog-ng:3.27.1
+                container_name: syslog-ng
+                hostname: syslog-ng
+                volumes:
+                        - ./conf.d:/etc/syslog-ng/conf.d
+                ports:
+                        - "514:514/udp"
+                        - "601:601"
+                restart: always
